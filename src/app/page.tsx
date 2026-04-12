@@ -92,18 +92,18 @@ export default function Home() {
                 <div className="grid gap-6 sm:grid-cols-3">
                   {[
                     {
-                      name: "Mark Alfano",
-                      title: "Professor of Philosophy",
-                      affiliation: "Macquarie University",
-                      website: "https://www.alfanophilosophy.com/",
-                      image: "mark-alfano"
-                    },
-                    {
                       name: "Michał Klincewicz",
                       title: "Assistant Professor, Computational Cognitive Science",
                       affiliation: "Tilburg University",
                       website: "https://sites.google.com/site/michalklincewicz/",
                       image: "michal-klincewicz"
+                    },
+                    {
+                      name: "Mark Alfano",
+                      title: "Professor of Philosophy",
+                      affiliation: "Macquarie University",
+                      website: "https://www.alfanophilosophy.com/",
+                      image: "mark-alfano"
                     },
                     {
                       name: "Amir Ebrahimi Fard",
@@ -159,25 +159,25 @@ export default function Home() {
                 outlet: "The Guardian",
                 description: "The slopaganda era: AI images posted by the White House and what they teach us",
                 link: "https://www.theguardian.com/us-news/2026/jan/29/the-slopaganda-era-10-ai-images-posted-by-the-white-house-and-what-they-teach-us",
-                date: "Jan 29, 2026"
+                date: "29 Jan 2026"
               },
               {
                 outlet: "The New Yorker",
                 description: "The team behind a pro-Iran LEGO-themed viral video campaign",
                 link: "https://www.newyorker.com/culture/infinite-scroll/the-team-behind-a-pro-iran-lego-themed-viral-video-campaign",
-                date: "Culture"
+                date: "April 2, 2026"
               },
               {
                 outlet: "Boston Globe",
                 description: "AI approved this message: How 2026 may be the first election where artificially generated content is inescapable",
                 link: "https://www.bostonglobe.com/2025/07/29/nation/ai-approved-this-message-how-2026-may-be-first-election-where-artificially-generated-content-is-inescapable/",
-                date: "Jul 29, 2025"
+                date: "29 July 2025"
               },
               {
                 outlet: "ABC News in Your Classroom",
                 description: "Slopaganda",
                 link: "https://www.abc.net.au/btn/classroom/slopaganda/105914076",
-                date: "Education"
+                date: "20 Oct 2025"
               }
             ].map((item, index) => (
               <a key={item.outlet} href={item.link} target="_blank" rel="noopener noreferrer" className="group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:border-emerald-400/60 hover:shadow-emerald-500/10 hover:shadow-xl hover:-translate-y-1">
@@ -214,8 +214,17 @@ export default function Home() {
           </div>
           <div className="mt-10 space-y-8">
             {/* YouTube video embed */}
-            <div className="rounded-3xl border border-slate-800 bg-slate-950 p-6">
-              <p className="text-sm uppercase tracking-[0.25em] text-emerald-300/80 mb-4">YouTube</p>
+            <div className="group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:border-emerald-400/60 hover:shadow-emerald-500/10 hover:shadow-xl hover:-translate-y-1">
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-red-400"></div>
+                  <p className="text-xs uppercase tracking-wider text-slate-400 font-medium">In-Depth Conversations</p>
+                </div>
+                <span className="text-xs text-slate-500">May 18, 2025</span>
+              </div>
+              <h3 className="text-lg font-semibold text-white leading-tight mb-4 group-hover:text-emerald-200 transition-colors">
+                Video discussion on slopaganda and AI-generated content
+              </h3>
               <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
                 <iframe
                   className="absolute inset-0 h-full w-full rounded-2xl"
@@ -234,7 +243,7 @@ export default function Home() {
                   <div className="w-3 h-3 rounded-full bg-purple-400"></div>
                   <p className="text-xs uppercase tracking-wider text-slate-400 font-medium">ABC Philosopher's Zone</p>
                 </div>
-                <span className="text-xs text-slate-500">Podcast</span>
+                <span className="text-xs text-slate-500">14 Oct 2025</span>
               </div>
               <h3 className="text-lg font-semibold text-white leading-tight mb-2 group-hover:text-emerald-200 transition-colors">
                 Slopaganda: Propaganda and AI
@@ -269,7 +278,7 @@ export default function Home() {
                 outlet: "The Conversation",
                 description: "Slopaganda wars: How and why the US and Iran are flooding the zone with viral AI-generated noise",
                 link: "https://theconversation.com/slopaganda-wars-how-and-why-the-us-and-iran-are-flooding-the-zone-with-viral-ai-generated-noise-280024",
-                date: "Analysis"
+                date: "April 7, 2026"
               }
             ].map((item, index) => (
               <a key={item.outlet} href={item.link} target="_blank" rel="noopener noreferrer" className="group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:border-emerald-400/60 hover:shadow-emerald-500/10 hover:shadow-xl hover:-translate-y-1">
