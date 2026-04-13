@@ -257,6 +257,29 @@ export default function Home() {
                 </div>
               </div>
             </a>
+
+            {/* New YouTube Interview */}
+            <div className="group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:border-emerald-400/60 hover:shadow-emerald-500/10 hover:shadow-xl hover:-translate-y-1">
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-blue-400"></div>
+                  <p className="text-xs uppercase tracking-wider text-slate-400 font-medium">Big [If True]</p>
+                </div>
+                <span className="text-xs text-slate-500">13 April 2026</span>
+              </div>
+              <h3 className="text-lg font-semibold text-white leading-tight mb-4 group-hover:text-emerald-200 transition-colors">
+                Interview on slopaganda research
+              </h3>
+              <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+                <iframe
+                  className="absolute inset-0 h-full w-full rounded-2xl"
+                  src="https://www.youtube.com/embed/cvC02UKZvY8"
+                  title="Slopaganda Interview"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            </div>
           </div>
         </section>
 
