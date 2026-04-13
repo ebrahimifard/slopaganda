@@ -225,6 +225,7 @@ export default function Home() {
               <h3 className="text-lg font-semibold text-white leading-tight mb-4 group-hover:text-emerald-200 transition-colors">
                 Video discussion on slopaganda and AI-generated content
               </h3>
+              <p className="text-sm text-slate-400 mb-4">Exploring the phenomena of slopaganda: the interaction between propaganda and generative AI.</p>
               <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
                 <iframe
                   className="absolute inset-0 h-full w-full rounded-2xl"
@@ -248,7 +249,7 @@ export default function Home() {
               <h3 className="text-lg font-semibold text-white leading-tight mb-2 group-hover:text-emerald-200 transition-colors">
                 Slopaganda: Propaganda and AI
               </h3>
-              <p className="text-sm text-slate-400 mb-3">Radio discussion exploring the concept and implications</p>
+              <p className="text-sm text-slate-400 mb-3">Discussion on AI-powered "slopaganda" - propaganda that's unprecedented in speed, scale, and persuasiveness. Guest: Mark Alfano, Professor of Philosophy at Macquarie University.</p>
               <div className="flex items-center justify-between">
                 <span className="text-sm text-slate-400">Listen now</span>
                 <div className="flex items-center gap-2 text-emerald-400 group-hover:text-emerald-300 transition-colors">
@@ -270,6 +271,7 @@ export default function Home() {
               <h3 className="text-lg font-semibold text-white leading-tight mb-4 group-hover:text-emerald-200 transition-colors">
                 Interview on slopaganda research
               </h3>
+              <p className="text-sm text-slate-400 mb-4">Discussion on the online propaganda battleground featuring AI-generated "slopaganda" in the Iran-Israel-US conflict. Guests: Matthew Gault (404 Media), Jason Stanley (University of Toronto), and Michal Klincewicz (Tilburg University).</p>
               <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
                 <iframe
                   className="absolute inset-0 h-full w-full rounded-2xl"
@@ -280,6 +282,31 @@ export default function Home() {
                 />
               </div>
             </div>
+
+            {/* ABC News Audio Interview */}
+            <a href="https://www.abc.net.au/news/2026-04-13/naus_slopagandanr_1304/106559166" target="_blank" rel="noopener noreferrer" className="group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:border-emerald-400/60 hover:shadow-emerald-500/10 hover:shadow-xl hover:-translate-y-1">
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-orange-400"></div>
+                  <p className="text-xs uppercase tracking-wider text-slate-400 font-medium">ABC News</p>
+                </div>
+                <span className="text-xs text-slate-500">13 April 2026</span>
+              </div>
+              <h3 className="text-lg font-semibold text-white leading-tight mb-2 group-hover:text-emerald-200 transition-colors">
+                Iran is dominating the 'slopaganda' war on social media
+              </h3>
+              <div className="text-sm text-slate-400 mb-3 space-y-2">
+                <p>Discussion on how AI-generated "slopaganda" is being weaponized in the propaganda war between Iran and the US, and its potential impact on public opinion.</p>
+                <p>Mark Alfano, Associate Professor of Philosophy at Macquarie University, spoke with ABC NewsRadio's Dijana Damjanovic.</p>
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-slate-400">Listen now</span>
+                <div className="flex items-center gap-2 text-emerald-400 group-hover:text-emerald-300 transition-colors">
+                  <span className="text-sm">🎧</span>
+                  <span>→</span>
+                </div>
+              </div>
+            </a>
           </div>
         </section>
 
