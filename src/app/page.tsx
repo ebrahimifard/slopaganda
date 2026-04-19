@@ -307,6 +307,66 @@ export default function Home() {
                 </div>
               </div>
             </a>
+
+            {/* Saufex Podcast */}
+            <a href="https://soundcloud.com/saufex/dr-michal-klincewicz" target="_blank" rel="noopener noreferrer" className="group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:border-emerald-400/60 hover:shadow-emerald-500/10 hover:shadow-xl hover:-translate-y-1">
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-cyan-400"></div>
+                  <p className="text-xs uppercase tracking-wider text-slate-400 font-medium">Saufex Podcast</p>
+                </div>
+                <span className="text-xs text-slate-500">19 February 2026</span>
+              </div>
+              <h3 className="text-lg font-semibold text-white leading-tight mb-2 group-hover:text-emerald-200 transition-colors">
+                Dr. Michał Klincewicz on slopaganda
+              </h3>
+              <p className="text-sm text-slate-400 mb-3">Audio interview with Dr. Michał Klincewicz on slopaganda and the new dynamics of AI-driven persuasion.</p>
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-slate-400">Listen now</span>
+                <div className="flex items-center gap-2 text-emerald-400 group-hover:text-emerald-300 transition-colors">
+                  <span className="text-sm">🎧</span>
+                  <span>→</span>
+                </div>
+              </div>
+            </a>
+
+            {/* Deutschlandfunk Kultur */}
+            <a href="https://www.deutschlandfunkkultur.de/ai-slop-wie-ki-inhalte-unsere-wahrnehmung-veraendern-100.html" target="_blank" rel="noopener noreferrer" className="group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:border-emerald-400/60 hover:shadow-emerald-500/10 hover:shadow-xl hover:-translate-y-1">
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-sky-400"></div>
+                  <p className="text-xs uppercase tracking-wider text-slate-400 font-medium">Deutschlandfunk Kultur</p>
+                </div>
+                <span className="text-xs text-slate-500">9 October 2025</span>
+              </div>
+              <h3 className="text-lg font-semibold text-white leading-tight mb-2 group-hover:text-emerald-200 transition-colors">
+                How AI content changes our perception
+              </h3>
+              <p className="text-sm text-slate-400 mb-3">Report on how AI-generated content reshapes attention and perception as volume outpaces our ability to process it.</p>
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-slate-400">Read article</span>
+                <div className="text-emerald-400 group-hover:text-emerald-300 transition-colors">→</div>
+              </div>
+            </a>
+
+            {/* Ashlyn Kate Bryson interview */}
+            <a href="https://substack.com/home/post/p-173952497" target="_blank" rel="noopener noreferrer" className="group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:border-emerald-400/60 hover:shadow-emerald-500/10 hover:shadow-xl hover:-translate-y-1">
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-fuchsia-400"></div>
+                  <p className="text-xs uppercase tracking-wider text-slate-400 font-medium">Ashlyn Kate Bryson</p>
+                </div>
+                <span className="text-xs text-slate-500">22 September 2025</span>
+              </div>
+              <h3 className="text-lg font-semibold text-white leading-tight mb-2 group-hover:text-emerald-200 transition-colors">
+                "Slopaganda": Dr. Michał Klincewicz Explains the Dark Future of AI Persuasion
+              </h3>
+              <p className="text-sm text-slate-400 mb-3">A concise interview summary of Dr. Michał Klincewicz on the evolving threat of AI-enabled persuasion and slopaganda.</p>
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-slate-400">Read article</span>
+                <div className="text-emerald-400 group-hover:text-emerald-300 transition-colors">→</div>
+              </div>
+            </a>
           </div>
         </section>
 
@@ -329,6 +389,12 @@ export default function Home() {
                 description: "Slopaganda wars: How and why the US and Iran are flooding the zone with viral AI-generated noise",
                 link: "https://theconversation.com/slopaganda-wars-how-and-why-the-us-and-iran-are-flooding-the-zone-with-viral-ai-generated-noise-280024",
                 date: "April 7, 2026"
+              },
+              {
+                outlet: "PsyArXiv",
+                description: "How slopaganda exploits features of human cognition",
+                link: "https://osf.io/preprints/psyarxiv/3zbdn_v1",
+                date: "11 March 2026"
               }
             ].map((item, index) => (
               <a key={item.outlet} href={item.link} target="_blank" rel="noopener noreferrer" className="group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:border-emerald-400/60 hover:shadow-emerald-500/10 hover:shadow-xl hover:-translate-y-1">
@@ -342,6 +408,11 @@ export default function Home() {
                 <h3 className="text-lg font-semibold text-white leading-tight mb-2 group-hover:text-emerald-200 transition-colors">
                   {item.description}
                 </h3>
+                {item.outlet === "The Conversation" ? (
+                  <p className="text-xs text-slate-500 mb-4">
+                    Also featured in: <a href="https://asiatimes.com/2026/04/slopaganda-us-iran-deploy-ai-slop-as-weapons-of-war/" target="_blank" rel="noopener noreferrer" className="underline decoration-slate-600 decoration-1 hover:text-emerald-200">Asia Times</a>, <a href="https://thewire.in/tech/ai-slopaganda-is-probably-here-to-stay" target="_blank" rel="noopener noreferrer" className="underline decoration-slate-600 decoration-1 hover:text-emerald-200">The Wire</a>, and <a href="https://www.channelnewsasia.com/commentary/ai-generated-slop-propaganda-us-iran-war-6043521" target="_blank" rel="noopener noreferrer" className="underline decoration-slate-600 decoration-1 hover:text-emerald-200">CNA</a>.
+                  </p>
+                ) : null}
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-slate-400">Read article</span>
                   <div className="text-emerald-400 group-hover:text-emerald-300 transition-colors">→</div>
