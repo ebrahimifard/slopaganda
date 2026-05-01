@@ -141,75 +141,17 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="media" className="rounded-3xl border border-slate-800 bg-slate-900/95 p-10 shadow-xl shadow-slate-950/20">
+
+        <section id="interviews" className="rounded-3xl border border-slate-800 bg-slate-900/95 p-10 shadow-xl shadow-slate-950/20">
           <div className="space-y-4">
             <p className="text-sm uppercase tracking-[0.3em] text-emerald-300/90">
               Press coverage
             </p>
             <h2 className="text-3xl font-semibold text-white sm:text-4xl">
-              Recognition from leading media outlets.
+              Recognition from media
             </h2>
             <p className="max-w-3xl text-slate-300 leading-8">
-              The concept of slopaganda is already resonating with journalists, researchers, and policy makers covering the intersection of AI and information ecosystems.
-            </p>
-          </div>
-          <div className="mt-10 grid gap-6 sm:grid-cols-2">
-            {[
-              {
-                outlet: "The Guardian",
-                description: "The slopaganda era: AI images posted by the White House and what they teach us",
-                link: "https://www.theguardian.com/us-news/2026/jan/29/the-slopaganda-era-10-ai-images-posted-by-the-white-house-and-what-they-teach-us",
-                date: "29 Jan 2026"
-              },
-              {
-                outlet: "The New Yorker",
-                description: "The team behind a pro-Iran LEGO-themed viral video campaign",
-                link: "https://www.newyorker.com/culture/infinite-scroll/the-team-behind-a-pro-iran-lego-themed-viral-video-campaign",
-                date: "April 2, 2026"
-              },
-              {
-                outlet: "Boston Globe",
-                description: "AI approved this message: How 2026 may be the first election where artificially generated content is inescapable",
-                link: "https://www.bostonglobe.com/2025/07/29/nation/ai-approved-this-message-how-2026-may-be-first-election-where-artificially-generated-content-is-inescapable/",
-                date: "29 July 2025"
-              },
-              {
-                outlet: "ABC News in Your Classroom",
-                description: "Slopaganda",
-                link: "https://www.abc.net.au/btn/classroom/slopaganda/105914076",
-                date: "20 Oct 2025"
-              }
-            ].map((item, index) => (
-              <a key={item.outlet} href={item.link} target="_blank" rel="noopener noreferrer" className="group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:border-emerald-400/60 hover:shadow-emerald-500/10 hover:shadow-xl hover:-translate-y-1">
-                <div className="flex items-start justify-between mb-3">
-                  <div className="flex items-center gap-2">
-                    <div className={`w-3 h-3 rounded-full ${index % 4 === 0 ? 'bg-red-400' : index % 4 === 1 ? 'bg-blue-400' : index % 4 === 2 ? 'bg-green-400' : 'bg-yellow-400'}`}></div>
-                    <p className="text-xs uppercase tracking-wider text-slate-400 font-medium">{item.outlet}</p>
-                  </div>
-                  <span className="text-xs text-slate-500">{item.date}</span>
-                </div>
-                <h3 className="text-lg font-semibold text-white leading-tight mb-2 group-hover:text-emerald-200 transition-colors">
-                  {item.description}
-                </h3>
-                <div className="flex items-center justify-between">
-                  <span className="text-sm text-slate-400">Read article</span>
-                  <div className="text-emerald-400 group-hover:text-emerald-300 transition-colors">→</div>
-                </div>
-              </a>
-            ))}
-          </div>
-        </section>
-
-        <section id="interviews" className="rounded-3xl border border-slate-800 bg-slate-900/95 p-10 shadow-xl shadow-slate-950/20">
-          <div className="space-y-4">
-            <p className="text-sm uppercase tracking-[0.3em] text-emerald-300/90">
-              In conversation
-            </p>
-            <h2 className="text-3xl font-semibold text-white sm:text-4xl">
-              Interviews and discussions.
-            </h2>
-            <p className="max-w-3xl text-slate-300 leading-8">
-              The research team has engaged with podcasts, video discussions, and other media to explain the concept and its implications.
+              The concept of slopaganda is already resonating with journalists, researchers, and policy makers covering the intersection of AI and information ecosystems. This section collects articles, interviews, and features about slopaganda in the media, including appearances and commentary from the authors on TV, radio, and other platforms.
             </p>
           </div>
           <div className="mt-10 space-y-8">
@@ -345,7 +287,10 @@ export default function Home() {
               <p className="text-sm text-slate-400 mb-3">Report on how AI-generated content reshapes attention and perception as volume outpaces our ability to process it.</p>
               <div className="flex items-center justify-between">
                 <span className="text-sm text-slate-400">Read article</span>
-                <div className="text-emerald-400 group-hover:text-emerald-300 transition-colors">→</div>
+                <div className="flex items-center gap-2 text-emerald-400 group-hover:text-emerald-300 transition-colors">
+                  <span className="text-sm">📰</span>
+                  <span>→</span>
+                </div>
               </div>
             </a>
 
@@ -364,7 +309,251 @@ export default function Home() {
               <p className="text-sm text-slate-400 mb-3">A concise interview summary of Dr. Michał Klincewicz on the evolving threat of AI-enabled persuasion and slopaganda.</p>
               <div className="flex items-center justify-between">
                 <span className="text-sm text-slate-400">Read article</span>
-                <div className="text-emerald-400 group-hover:text-emerald-300 transition-colors">→</div>
+                <div className="flex items-center gap-2 text-emerald-400 group-hover:text-emerald-300 transition-colors">
+                  <span className="text-sm">📰</span>
+                  <span>→</span>
+                </div>
+              </div>
+            </a>
+
+            {/* BTN (Behind the News) interview */}
+            <a href="https://www.abc.net.au/btn/classroom/slopaganda/105914076" target="_blank" rel="noopener noreferrer" className="group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:border-emerald-400/60 hover:shadow-emerald-500/10 hover:shadow-xl hover:-translate-y-1">
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-orange-400"></div>
+                  <p className="text-xs uppercase tracking-wider text-slate-400 font-medium">BTN (Behind the News)</p>
+                </div>
+                <span className="text-xs text-slate-500">20 October 2025</span>
+              </div>
+              <h3 className="text-lg font-semibold text-white leading-tight mb-2 group-hover:text-emerald-200 transition-colors">
+                Slopaganda
+              </h3>
+              <p className="text-sm text-slate-400 mb-3">Interview with Prof. Mark Alfano on the concept of slopaganda and its impact, featured on BTN (Behind the News).</p>
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-slate-400">Watch interview</span>
+                <div className="flex items-center gap-2 text-emerald-400 group-hover:text-emerald-300 transition-colors">
+                  <span className="text-sm">📺</span>
+                  <span>→</span>
+                </div>
+              </div>
+            </a>
+
+            {/* The Guardian feature */}
+            <a href="https://www.theguardian.com/us-news/2026/jan/29/the-slopaganda-era-10-ai-images-posted-by-the-white-house-and-what-they-teach-us" target="_blank" rel="noopener noreferrer" className="group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:border-emerald-400/60 hover:shadow-emerald-500/10 hover:shadow-xl hover:-translate-y-1">
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-red-400"></div>
+                  <p className="text-xs uppercase tracking-wider text-slate-400 font-medium">The Guardian</p>
+                </div>
+                <span className="text-xs text-slate-500">29 Jan 2026</span>
+              </div>
+              <h3 className="text-lg font-semibold text-white leading-tight mb-2 group-hover:text-emerald-200 transition-colors">
+                The slopaganda era: AI images posted by the White House and what they teach us
+              </h3>
+              <p className="text-sm text-slate-400 mb-3">Feature on the rise of slopaganda and the use of AI-generated images in political communication.</p>
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-slate-400">Read article</span>
+                <div className="flex items-center gap-2 text-emerald-400 group-hover:text-emerald-300 transition-colors">
+                  <span className="text-sm">📰</span>
+                  <span>→</span>
+                </div>
+              </div>
+            </a>
+
+            {/* The New Yorker feature */}
+            <a href="https://www.newyorker.com/culture/infinite-scroll/the-team-behind-a-pro-iran-lego-themed-viral-video-campaign" target="_blank" rel="noopener noreferrer" className="group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:border-emerald-400/60 hover:shadow-emerald-500/10 hover:shadow-xl hover:-translate-y-1">
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-blue-400"></div>
+                  <p className="text-xs uppercase tracking-wider text-slate-400 font-medium">The New Yorker</p>
+                </div>
+                <span className="text-xs text-slate-500">April 2, 2026</span>
+              </div>
+              <h3 className="text-lg font-semibold text-white leading-tight mb-2 group-hover:text-emerald-200 transition-colors">
+                The team behind a pro-Iran LEGO-themed viral video campaign
+              </h3>
+              <p className="text-sm text-slate-400 mb-3">A look at the creators of a viral AI-powered propaganda campaign using LEGO themes in the Iran conflict.</p>
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-slate-400">Read article</span>
+                <div className="flex items-center gap-2 text-emerald-400 group-hover:text-emerald-300 transition-colors">
+                  <span className="text-sm">📰</span>
+                  <span>→</span>
+                </div>
+              </div>
+            </a>
+
+            {/* Boston Globe feature */}
+            <a href="https://www.bostonglobe.com/2025/07/29/nation/ai-approved-this-message-how-2026-may-be-first-election-where-artificially-generated-content-is-inescapable/" target="_blank" rel="noopener noreferrer" className="group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:border-emerald-400/60 hover:shadow-emerald-500/10 hover:shadow-xl hover:-translate-y-1">
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-green-400"></div>
+                  <p className="text-xs uppercase tracking-wider text-slate-400 font-medium">Boston Globe</p>
+                </div>
+                <span className="text-xs text-slate-500">29 July 2025</span>
+              </div>
+              <h3 className="text-lg font-semibold text-white leading-tight mb-2 group-hover:text-emerald-200 transition-colors">
+                AI approved this message: How 2026 may be the first election where artificially generated content is inescapable
+              </h3>
+              <p className="text-sm text-slate-400 mb-3">Analysis of the impact of AI-generated content on elections and the information ecosystem.</p>
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-slate-400">Read article</span>
+                <div className="flex items-center gap-2 text-emerald-400 group-hover:text-emerald-300 transition-colors">
+                  <span className="text-sm">📰</span>
+                  <span>→</span>
+                </div>
+              </div>
+            </a>
+            {/* NBC News interview */}
+            <a href="https://www.nbcnews.com/video/how-slopaganda-ai-videos-could-influence-the-war-between-the-u-s-and-iran-261374533511" target="_blank" rel="noopener noreferrer" className="group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:border-emerald-400/60 hover:shadow-emerald-500/10 hover:shadow-xl hover:-translate-y-1">
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
+                  <p className="text-xs uppercase tracking-wider text-slate-400 font-medium">NBC News</p>
+                </div>
+                <span className="text-xs text-slate-500">15 April 2026</span>
+              </div>
+              <h3 className="text-lg font-semibold text-white leading-tight mb-2 group-hover:text-emerald-200 transition-colors">
+                How 'slopaganda' AI videos could influence the war between the U.S. and Iran
+              </h3>
+              <p className="text-sm text-slate-400 mb-3">Mark Alfano discusses the potential impact of AI-generated slopaganda videos on the U.S.-Iran conflict.</p>
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-slate-400">Watch interview</span>
+                <div className="flex items-center gap-2 text-emerald-400 group-hover:text-emerald-300 transition-colors">
+                  <span className="text-sm">📺</span>
+                  <span>→</span>
+                </div>
+              </div>
+            </a>
+
+            {/* de Volkskrant interview */}
+            <a href="https://www.volkskrant.nl/kijkverder/v/2026/ai-propaganda-iran-vs-slopaganda-lego~v2964364/" target="_blank" rel="noopener noreferrer" className="group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:border-emerald-400/60 hover:shadow-emerald-500/10 hover:shadow-xl hover:-translate-y-1">
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-lime-400"></div>
+                  <p className="text-xs uppercase tracking-wider text-slate-400 font-medium">de Volkskrant</p>
+                </div>
+                <span className="text-xs text-slate-500">22 April 2026</span>
+              </div>
+              <h3 className="text-lg font-semibold text-white leading-tight mb-2 group-hover:text-emerald-200 transition-colors">
+                Iran bevecht Donald Trump met lego: AI-president delft onderspit in propagandavideo’s
+              </h3>
+              <p className="text-sm text-slate-400 mb-3">Dr. Michał Klincewicz explains how Iran uses AI and Lego-themed videos in the propaganda battle against Trump.</p>
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-slate-400">Read article</span>
+                <div className="flex items-center gap-2 text-emerald-400 group-hover:text-emerald-300 transition-colors">
+                  <span className="text-sm">📰</span>
+                  <span>→</span>
+                </div>
+              </div>
+            </a>
+
+            {/* TVN24+ interview */}
+            <a href="https://tvn24.pl/biznes/tech/propaganda-z-wykorzystaniem-ai-czyli-slopaganda-wojna-w-ktorej-nie-chodzi-o-prawde-st9019064" target="_blank" rel="noopener noreferrer" className="group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:border-emerald-400/60 hover:shadow-emerald-500/10 hover:shadow-xl hover:-translate-y-1">
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-blue-400"></div>
+                  <p className="text-xs uppercase tracking-wider text-slate-400 font-medium">TVN24+</p>
+                </div>
+                <span className="text-xs text-slate-500">29 April 2026</span>
+              </div>
+              <h3 className="text-lg font-semibold text-white leading-tight mb-2 group-hover:text-emerald-200 transition-colors">
+                Wojna na slopagandę. "To może wywołać totalny chaos"
+              </h3>
+              <p className="text-sm text-slate-400 mb-3">Interview with Dr. Michał Klincewicz on AI-powered propaganda (slopaganda) and the risks of informational chaos. In Polish.</p>
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-slate-400">Read article</span>
+                <div className="flex items-center gap-2 text-emerald-400 group-hover:text-emerald-300 transition-colors">
+                  <span className="text-sm">📰</span>
+                  <span>→</span>
+                </div>
+              </div>
+            </a>
+
+            {/* iMEdD interview */}
+            <a href="https://lab.imedd.org/en/slopaganda-institutionalized/" target="_blank" rel="noopener noreferrer" className="group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:border-emerald-400/60 hover:shadow-emerald-500/10 hover:shadow-xl hover:-translate-y-1">
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-pink-400"></div>
+                  <p className="text-xs uppercase tracking-wider text-slate-400 font-medium">iMEdD</p>
+                </div>
+                <span className="text-xs text-slate-500">21 April 2026</span>
+              </div>
+              <h3 className="text-lg font-semibold text-white leading-tight mb-2 group-hover:text-emerald-200 transition-colors">
+                Slopaganda, institutionalized
+              </h3>
+              <p className="text-sm text-slate-400 mb-3">Prof. Mark Alfano and Dr. Michał Klincewicz discuss the institutionalization of slopaganda in media and politics.</p>
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-slate-400">Read interview</span>
+                <div className="flex items-center gap-2 text-emerald-400 group-hover:text-emerald-300 transition-colors">
+                  <span className="text-sm">📰</span>
+                  <span>→</span>
+                </div>
+              </div>
+            </a>
+
+            {/* ABC Radio National Life Matters interview */}
+            <a href="https://www.abc.net.au/listen/programs/lifematters/watch-out-for-slopaganda-in-your-feeds/106551364" target="_blank" rel="noopener noreferrer" className="group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:border-emerald-400/60 hover:shadow-emerald-500/10 hover:shadow-xl hover:-translate-y-1">
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-indigo-400"></div>
+                  <p className="text-xs uppercase tracking-wider text-slate-400 font-medium">ABC Radio National</p>
+                </div>
+                <span className="text-xs text-slate-500">13 April 2026</span>
+              </div>
+              <h3 className="text-lg font-semibold text-white leading-tight mb-2 group-hover:text-emerald-200 transition-colors">
+                Watch out for 'slopaganda' in your feeds
+              </h3>
+              <p className="text-sm text-slate-400 mb-3">Prof. Mark Alfano explains how slopaganda is shaping what we see on social media.</p>
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-slate-400">Listen now</span>
+                <div className="flex items-center gap-2 text-emerald-400 group-hover:text-emerald-300 transition-colors">
+                  <span className="text-sm">🎧</span>
+                  <span>→</span>
+                </div>
+              </div>
+            </a>
+
+            {/* ABC Radio National Weekend Evenings interview */}
+            <a href="https://www.abc.net.au/listen/programs/weekendevenings/weekend-evenings/106593568" target="_blank" rel="noopener noreferrer" className="group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:border-emerald-400/60 hover:shadow-emerald-500/10 hover:shadow-xl hover:-translate-y-1">
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-rose-400"></div>
+                  <p className="text-xs uppercase tracking-wider text-slate-400 font-medium">ABC Radio National</p>
+                </div>
+                <span className="text-xs text-slate-500">26 April 2026</span>
+              </div>
+              <h3 className="text-lg font-semibold text-white leading-tight mb-2 group-hover:text-emerald-200 transition-colors">
+                National Weekend Evenings
+              </h3>
+              <p className="text-sm text-slate-400 mb-3">Prof. Mark Alfano discusses slopaganda and meme warfare on ABC's Weekend Evenings.</p>
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-slate-400">Listen now</span>
+                <div className="flex items-center gap-2 text-emerald-400 group-hover:text-emerald-300 transition-colors">
+                  <span className="text-sm">🎧</span>
+                  <span>→</span>
+                </div>
+              </div>
+            </a>
+
+            {/* RNZ interview */}
+            <a href="https://www.rnz.co.nz/news/world/593078/meme-warfare-and-slopaganda-are-defining-the-ai-era-iran-war" target="_blank" rel="noopener noreferrer" className="group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:border-emerald-400/60 hover:shadow-emerald-500/10 hover:shadow-xl hover:-translate-y-1">
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-green-400"></div>
+                  <p className="text-xs uppercase tracking-wider text-slate-400 font-medium">RNZ</p>
+                </div>
+                <span className="text-xs text-slate-500">22 April 2026</span>
+              </div>
+              <h3 className="text-lg font-semibold text-white leading-tight mb-2 group-hover:text-emerald-200 transition-colors">
+                Meme warfare and 'slopaganda' are defining the AI-era Iran war
+              </h3>
+              <p className="text-sm text-slate-400 mb-3">Prof. Mark Alfano discusses meme warfare and slopaganda in the context of the Iran war on RNZ.</p>
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-slate-400">Read article</span>
+                <div className="flex items-center gap-2 text-emerald-400 group-hover:text-emerald-300 transition-colors">
+                  <span className="text-sm">📰</span>
+                  <span>→</span>
+                </div>
               </div>
             </a>
           </div>
@@ -383,42 +572,85 @@ export default function Home() {
             </p>
           </div>
           <div className="mt-10 grid gap-4">
-            {[
-              {
-                outlet: "The Conversation",
-                description: "Slopaganda wars: How and why the US and Iran are flooding the zone with viral AI-generated noise",
-                link: "https://theconversation.com/slopaganda-wars-how-and-why-the-us-and-iran-are-flooding-the-zone-with-viral-ai-generated-noise-280024",
-                date: "April 7, 2026"
-              },
-              {
-                outlet: "PsyArXiv",
-                description: "How slopaganda exploits features of human cognition",
-                link: "https://osf.io/preprints/psyarxiv/3zbdn_v1",
-                date: "11 March 2026"
-              }
-            ].map((item, index) => (
-              <a key={item.outlet} href={item.link} target="_blank" rel="noopener noreferrer" className="group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:border-emerald-400/60 hover:shadow-emerald-500/10 hover:shadow-xl hover:-translate-y-1">
-                <div className="flex items-start justify-between mb-3">
-                  <div className="flex items-center gap-2">
-                    <div className="w-3 h-3 rounded-full bg-orange-400"></div>
-                    <p className="text-xs uppercase tracking-wider text-slate-400 font-medium">{item.outlet}</p>
-                  </div>
-                  <span className="text-xs text-slate-500">{item.date}</span>
+            {(() => {
+              const articles = [
+                {
+                  outlet: "The Conversation",
+                  description: "Slopaganda wars: How and why the US and Iran are flooding the zone with viral AI-generated noise",
+                  link: "https://theconversation.com/slopaganda-wars-how-and-why-the-us-and-iran-are-flooding-the-zone-with-viral-ai-generated-noise-280024",
+                  date: "April 7, 2026"
+                },
+                {
+                  outlet: "PsyArXiv",
+                  description: "How slopaganda exploits features of human cognition",
+                  link: "https://osf.io/preprints/psyarxiv/3zbdn_v1",
+                  date: "11 March 2026"
+                }
+              ];
+              return articles.map((item, index) => (
+                <div key={item.outlet}>
+                  <a href={item.link} target="_blank" rel="noopener noreferrer" className="group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:border-emerald-400/60 hover:shadow-emerald-500/10 hover:shadow-xl hover:-translate-y-1">
+                    <div className="flex items-start justify-between mb-3">
+                      <div className="flex items-center gap-2">
+                        <div className="w-3 h-3 rounded-full bg-orange-400"></div>
+                        <p className="text-xs uppercase tracking-wider text-slate-400 font-medium">{item.outlet}</p>
+                      </div>
+                      <span className="text-xs text-slate-500">{item.date}</span>
+                    </div>
+                    <h3 className="text-lg font-semibold text-white leading-tight mb-2 group-hover:text-emerald-200 transition-colors">
+                      {item.description}
+                    </h3>
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm text-slate-400">Read article</span>
+                      <div className="text-emerald-400 group-hover:text-emerald-300 transition-colors">→</div>
+                    </div>
+                  </a>
+                  {item.outlet === "The Conversation" && (
+                    <div className="mt-2 text-xs text-slate-500">
+                      Also featured in: <a href="https://asiatimes.com/2026/04/slopaganda-us-iran-deploy-ai-slop-as-weapons-of-war/" target="_blank" rel="noopener noreferrer" className="underline decoration-slate-600 decoration-1 hover:text-emerald-200">Asia Times</a>, <a href="https://thewire.in/tech/ai-slopaganda-is-probably-here-to-stay" target="_blank" rel="noopener noreferrer" className="underline decoration-slate-600 decoration-1 hover:text-emerald-200">The Wire</a>, and <a href="https://www.channelnewsasia.com/commentary/ai-generated-slop-propaganda-us-iran-war-6043521" target="_blank" rel="noopener noreferrer" className="underline decoration-slate-600 decoration-1 hover:text-emerald-200">CNA</a>.
+                    </div>
+                  )}
                 </div>
-                <h3 className="text-lg font-semibold text-white leading-tight mb-2 group-hover:text-emerald-200 transition-colors">
-                  {item.description}
-                </h3>
-                {item.outlet === "The Conversation" ? (
-                  <p className="text-xs text-slate-500 mb-4">
-                    Also featured in: <a href="https://asiatimes.com/2026/04/slopaganda-us-iran-deploy-ai-slop-as-weapons-of-war/" target="_blank" rel="noopener noreferrer" className="underline decoration-slate-600 decoration-1 hover:text-emerald-200">Asia Times</a>, <a href="https://thewire.in/tech/ai-slopaganda-is-probably-here-to-stay" target="_blank" rel="noopener noreferrer" className="underline decoration-slate-600 decoration-1 hover:text-emerald-200">The Wire</a>, and <a href="https://www.channelnewsasia.com/commentary/ai-generated-slop-propaganda-us-iran-war-6043521" target="_blank" rel="noopener noreferrer" className="underline decoration-slate-600 decoration-1 hover:text-emerald-200">CNA</a>.
-                  </p>
-                ) : null}
-                <div className="flex items-center justify-between">
-                  <span className="text-sm text-slate-400">Read article</span>
-                  <div className="text-emerald-400 group-hover:text-emerald-300 transition-colors">→</div>
+              ));
+            })()}
+          </div>
+        </section>
+
+        <section id="policy-documents" className="rounded-3xl border border-slate-800 bg-slate-900/95 p-10 shadow-xl shadow-slate-950/20 mt-12">
+          <div className="space-y-4">
+            <p className="text-sm uppercase tracking-[0.3em] text-emerald-300/90">
+              Policy and official reports
+            </p>
+            <h2 className="text-3xl font-semibold text-white sm:text-4xl">
+              Slopaganda in Policy Documents
+            </h2>
+            <p className="max-w-3xl text-slate-300 leading-8">
+              References to slopaganda in government and institutional reports.
+            </p>
+          </div>
+          <div className="mt-10 grid gap-6">
+            <a href="https://www.aph.gov.au/Parliamentary_Business/Committees/Senate/Information_Integrity_on_Climate_Change_and_Energy/ClimateIntegrity/Report/Chapter_9_-_Committee_view" target="_blank" rel="noopener noreferrer" className="group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:border-emerald-400/60 hover:shadow-emerald-500/10 hover:shadow-xl hover:-translate-y-1">
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
+                  <p className="text-xs uppercase tracking-wider text-slate-400 font-medium">Hansard</p>
                 </div>
-              </a>
-            ))}
+                <span className="text-xs text-slate-500">Commonwealth of Australia 2026</span>
+              </div>
+              <h3 className="text-lg font-semibold text-white leading-tight mb-2 group-hover:text-emerald-200 transition-colors">
+                The Integrity Gap: Restoring Trust in the Climate and Energy Debate
+              </h3>
+              <p className="text-sm text-slate-400 mb-3">
+                <span className="font-semibold">The Senate Select Committee on Information Integrity on Climate Change and Energy</span> references "slopaganda" in its official report on the integrity gap in climate and energy debates.
+              </p>
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-slate-400">Read document</span>
+                <div className="flex items-center gap-2 text-emerald-400 group-hover:text-emerald-300 transition-colors">
+                  <span className="text-sm">📄</span>
+                  <span>→</span>
+                </div>
+              </div>
+            </a>
           </div>
         </section>
       </main>
