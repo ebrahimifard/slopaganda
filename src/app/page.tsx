@@ -26,6 +26,9 @@ export default function Home() {
             <a href="#interviews" className="transition hover:text-white">
               Interviews
             </a>
+              <a href="/what-others-say" className="transition hover:text-white">
+                What Others Say
+              </a>
           </nav>
         </div>
       </header>
@@ -251,6 +254,28 @@ export default function Home() {
             </a>
 
             {/* Saufex Podcast */}
+
+              {/* The Breakfast Couch Interview */}
+              <a href="https://iview.abc.net.au/show/breakfast-couch/series/0/video/NC2613V009S00" target="_blank" rel="noopener noreferrer" className="group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:border-emerald-400/60 hover:shadow-emerald-500/10 hover:shadow-xl hover:-translate-y-1">
+                <div className="flex items-start justify-between mb-3">
+                  <div className="flex items-center gap-2">
+                    <div className="w-3 h-3 rounded-full bg-pink-400"></div>
+                    <p className="text-xs uppercase tracking-wider text-slate-400 font-medium">The Breakfast Couch</p>
+                  </div>
+                  <span className="text-xs text-slate-500">3 April 2026</span>
+                </div>
+                <h3 className="text-lg font-semibold text-white leading-tight mb-2 group-hover:text-emerald-200 transition-colors">
+                  Interview with Prof. Mark Alfano
+                </h3>
+                <p className="text-sm text-slate-400 mb-3">A feature interview with Prof. Mark Alfano on slopaganda, AI, and information ecosystems, aired on ABC's The Breakfast Couch.</p>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-slate-400">Watch now</span>
+                  <div className="flex items-center gap-2 text-emerald-400 group-hover:text-emerald-300 transition-colors">
+                    <span className="text-sm">🎬</span>
+                    <span>→</span>
+                  </div>
+                </div>
+              </a>
             <a href="https://soundcloud.com/saufex/dr-michal-klincewicz" target="_blank" rel="noopener noreferrer" className="group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:border-emerald-400/60 hover:shadow-emerald-500/10 hover:shadow-xl hover:-translate-y-1">
               <div className="flex items-start justify-between mb-3">
                 <div className="flex items-center gap-2">
