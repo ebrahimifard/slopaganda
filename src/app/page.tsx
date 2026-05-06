@@ -23,6 +23,12 @@ export default function Home() {
             <a href="#interviews" className="transition hover:text-white">
               Press Coverage
             </a>
+            <a href="#deep-dives" className="transition hover:text-white">
+              Deep dives on slopaganda.
+            </a>
+            <a href="#policy-docs" className="transition hover:text-white">
+              Slopaganda in Policy Documents
+            </a>
               <a href="/what-others-say" className="transition hover:text-white">
                 What Others Say
               </a>
@@ -605,7 +611,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="analysis" className="rounded-3xl border border-slate-800 bg-slate-900/95 p-10 shadow-xl shadow-slate-950/20">
+        <section id="deep-dives" className="rounded-3xl border border-slate-800 bg-slate-900/95 p-10 shadow-xl shadow-slate-950/20">
           <div className="space-y-4">
             <p className="text-sm uppercase tracking-[0.3em] text-emerald-300/90">
               Analysis and perspective
@@ -662,7 +668,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="policy-documents" className="rounded-3xl border border-slate-800 bg-slate-900/95 p-10 shadow-xl shadow-slate-950/20 mt-12">
+        <section id="policy-docs" className="rounded-3xl border border-slate-800 bg-slate-900/95 p-10 shadow-xl shadow-slate-950/20 mt-12">
           <div className="space-y-4">
             <p className="text-sm uppercase tracking-[0.3em] text-emerald-300/90">
               Policy and official reports
