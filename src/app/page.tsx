@@ -20,11 +20,8 @@ export default function Home() {
             <a href="#paper" className="transition hover:text-white">
               Paper
             </a>
-            <a href="#media" className="transition hover:text-white">
-              Press
-            </a>
             <a href="#interviews" className="transition hover:text-white">
-              Interviews
+              Press Coverage
             </a>
               <a href="/what-others-say" className="transition hover:text-white">
                 What Others Say
@@ -268,6 +265,30 @@ export default function Home() {
                   Interview with Prof. Mark Alfano
                 </h3>
                 <p className="text-sm text-slate-400 mb-3">A feature interview with Prof. Mark Alfano on slopaganda, AI, and information ecosystems, aired on ABC's The Breakfast Couch.</p>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-slate-400">Watch now</span>
+                  <div className="flex items-center gap-2 text-emerald-400 group-hover:text-emerald-300 transition-colors">
+                    <span className="text-sm">🎬</span>
+                    <span>→</span>
+                  </div>
+                </div>
+              </a>
+
+              {/* ARD Mediathek Interview */}
+              <a href="https://www.ardmediathek.de/video/ttt-titel-thesen-temperamente/ki-propaganda-mit-lego-mannchen/ard/Y2E2NTIwNGEtNWE3Yi00YmNmLTgyNmYtODk1ZTBiMDFhZTZj" target="_blank" rel="noopener noreferrer" className="group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:border-emerald-400/60 hover:shadow-emerald-500/10 hover:shadow-xl hover:-translate-y-1">
+                <div className="flex items-start justify-between mb-3">
+                  <div className="flex items-center gap-2">
+                    <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
+                    <p className="text-xs uppercase tracking-wider text-slate-400 font-medium">ARD Mediathek</p>
+                  </div>
+                  <span className="text-xs text-slate-500">3 May 2026</span>
+                </div>
+                <h3 className="text-lg font-semibold text-white leading-tight mb-2 group-hover:text-emerald-200 transition-colors">
+                  Interview with Dr. Michal Klincewicz
+                </h3>
+                <div className="text-sm text-slate-400 mb-3 space-y-2">
+                  <p>Bericht über KI-generierte Satirevideos im Iran-Krieg: Virale Clips, die politische Gegner karikieren und Stereotype verstärken.</p>
+                </div>
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-slate-400">Watch now</span>
                   <div className="flex items-center gap-2 text-emerald-400 group-hover:text-emerald-300 transition-colors">
