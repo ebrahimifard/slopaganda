@@ -32,6 +32,9 @@ export default function Home() {
               <a href="/what-others-say" className="transition hover:text-white">
                 What Others Say
               </a>
+              <a href="/slopaganda-events" className="transition hover:text-white">
+                Slopaganda Events
+              </a>
           </nav>
         </div>
       </header>
@@ -161,6 +164,27 @@ export default function Home() {
             </p>
           </div>
           <div className="mt-10 space-y-8">
+            {/* WOZ Die Wochenzeitung */}
+            <a href="https://www.woz.ch/kolumnen/2026/05/08/slopaganda-was-ist-slopaganda" target="_blank" rel="noopener noreferrer" className="group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:border-emerald-400/60 hover:shadow-emerald-500/10 hover:shadow-xl hover:-translate-y-1">
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                  <p className="text-xs uppercase tracking-wider text-slate-400 font-medium">WOZ Die Wochenzeitung</p>
+                </div>
+                <span className="text-xs text-slate-500">8 May 2026</span>
+              </div>
+              <h3 className="text-lg font-semibold text-white leading-tight mb-2 group-hover:text-emerald-200 transition-colors">
+                Was ist Slopaganda?
+              </h3>
+              <p className="text-sm text-slate-400 mb-3">Kolumne zur Frage, was Slopaganda ist und wie sie die Medienlandschaft verändert.</p>
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-slate-400">Read article</span>
+                <div className="flex items-center gap-2 text-emerald-400 group-hover:text-emerald-300 transition-colors">
+                  <span className="text-sm">📰</span>
+                  <span>→</span>
+                </div>
+              </div>
+            </a>
             {/* YouTube video embed */}
             <div className="group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:border-emerald-400/60 hover:shadow-emerald-500/10 hover:shadow-xl hover:-translate-y-1">
               <div className="flex items-start justify-between mb-3">
