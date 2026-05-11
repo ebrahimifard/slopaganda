@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function WhatOthersSay() {
   return (
     <section className="rounded-3xl border border-slate-800 bg-slate-900/95 p-10 shadow-xl shadow-slate-950/20 mt-12 max-w-5xl mx-auto">
@@ -11,7 +9,7 @@ export default function WhatOthersSay() {
           What Others Say About Slopaganda
         </h2>
         <p className="max-w-3xl text-slate-300 leading-8">
-          This page collects notable mentions of "slopaganda" in the media and public discourse, where the concept is discussed or referenced without directly interviewing the authors or featuring their research paper.
+          This page collects notable mentions of &quot;slopaganda&quot; in the media and public discourse, where the concept is discussed or referenced without directly interviewing the authors or featuring their research paper.
         </p>
       </div>
       <div className="mt-10 space-y-8">
@@ -67,7 +65,7 @@ export default function WhatOthersSay() {
             <span className="text-xs text-slate-500">12 April 2026</span>
           </div>
           <h3 className="text-lg font-semibold text-white leading-tight mb-2 group-hover:text-emerald-200 transition-colors">
-            We spoke to the man making viral Lego-style AI videos for Iran. Experts say it's powerful propaganda
+            We spoke to the man making viral Lego-style AI videos for Iran. Experts say it&apos;s powerful propaganda
           </h3>
           <div className="flex items-center justify-between">
             <span className="text-sm text-slate-400">Read article</span>

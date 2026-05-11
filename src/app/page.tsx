@@ -3,63 +3,6 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100">
-      <header className="mx-auto flex w-full max-w-7xl flex-col gap-8 px-6 py-8 sm:px-10">
-        <div className="flex flex-col gap-6">
-          <div>
-            <p className="mb-2 text-sm uppercase tracking-[0.3em] text-slate-400">
-              Slopaganda
-            </p>
-            <h1 className="text-4xl font-semibold leading-tight sm:text-5xl lg:whitespace-nowrap">
-              Propaganda in the age of generative AI.
-            </h1>
-          </div>
-          <nav className="flex flex-wrap gap-2 rounded-2xl border border-slate-800 bg-slate-900/80 p-2 text-sm text-slate-300 shadow-lg shadow-slate-950/20 backdrop-blur">
-            <a
-              href="#introduction"
-              className="rounded-full px-4 py-2 transition hover:bg-slate-800 hover:text-white"
-            >
-              What is Slopaganda
-            </a>
-            <a
-              href="#paper"
-              className="rounded-full px-4 py-2 transition hover:bg-slate-800 hover:text-white"
-            >
-              Paper
-            </a>
-            <a
-              href="/press-coverage"
-              className="rounded-full px-4 py-2 transition hover:bg-slate-800 hover:text-white"
-            >
-              Press Coverage
-            </a>
-            <a
-              href="/deep-dives"
-              className="rounded-full px-4 py-2 transition hover:bg-slate-800 hover:text-white"
-            >
-              Deep Dives
-            </a>
-            <a
-              href="/policy-documents"
-              className="rounded-full px-4 py-2 transition hover:bg-slate-800 hover:text-white"
-            >
-              Policy Documents
-            </a>
-            <a
-              href="/what-others-say"
-              className="rounded-full px-4 py-2 transition hover:bg-slate-800 hover:text-white"
-            >
-              What Others Say
-            </a>
-            <a
-              href="/slopaganda-events"
-              className="rounded-full px-4 py-2 transition hover:bg-slate-800 hover:text-white"
-            >
-              Slopaganda Events
-            </a>
-          </nav>
-        </div>
-      </header>
-
       <main className="mx-auto w-full max-w-7xl space-y-24 px-6 pb-20 sm:px-10">
         <section
           id="introduction"
@@ -163,7 +106,7 @@ export default function Home() {
                       title: "Professor of Philosophy",
                       affiliation: "Macquarie University",
                       website: "https://www.alfanophilosophy.com/",
-                      image: "mark-alfano",
+                      image: "mark-alfano2",
                     },
                     {
                       name: "Amir Ebrahimi Fard",
