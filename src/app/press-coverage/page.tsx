@@ -11,6 +11,26 @@ type PressItem = {
 
 const pressItems: PressItem[] = [
   {
+    outlet: "Medieinstitutet Fojo",
+    date: "12 May 2026",
+    title: "Myras meme-skola 3: Slopagandan och leksakskriget",
+    description:
+      "När iransk statspropaganda tar formen av en Legofilm och når miljontals tittare globalt, är det lätt att avfärda allt som lustig kuriosa. Det vore ett misstag. Explosive Medias virala klipp är ett skolboksexempel på hur samtida informationskrig fungerar, och varför journalister behöver ett nytt sätt att tänka om vad propaganda egentligen är.",
+    href: "https://fojo.se/verify/myras-meme-skola-3-slopagandan-och-leksakskriget/",
+    action: "Read article",
+    color: "bg-emerald-400",
+  },
+  {
+    outlet: "Some Thoughts from the Cappuccino Girl",
+    date: "10 May 2026",
+    title: "Political Resistance and Propaganda: From Dadaism to Slopaganda (Part 2)",
+    description:
+      "In the contemporary age of AI, satirical political propaganda has become both highly entertaining and strikingly effective.",
+    href: "https://feministpassion.blogspot.com/2026/05/political-resistance-and-propaganda_10.html",
+    action: "Read article",
+    color: "bg-purple-400",
+  },
+  {
     outlet: "WOZ Die Wochenzeitung",
     date: "8 May 2026",
     title: "Was ist Slopaganda?",
