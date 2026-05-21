@@ -5,7 +5,16 @@ const policyDocuments = [
     title: "The Integrity Gap: Restoring Trust in the Climate and Energy Debate",
     description:
       "The Senate Select Committee on Information Integrity on Climate Change and Energy references slopaganda in its official report on the integrity gap in climate and energy debates.",
-    link: "https://www.aph.gov.au/Parliamentary_Business/Committees/Senate/Information_Integrity_on_Climate_Change_and_Energy/ClimateIntegrity/Report/Chapter_9_-_Committee_view",
+    resources: [
+      {
+        label: "Committee report",
+        href: "https://www.aph.gov.au/Parliamentary_Business/Committees/Senate/Information_Integrity_on_Climate_Change_and_Energy/ClimateIntegrity/Report/Chapter_9_-_Committee_view",
+      },
+      {
+        label: "Hansard transcript",
+        href: "https://www.aph.gov.au/Parliamentary_Business/Hansard/Hansard_Display?bid=chamber/hansards/29212/&sid=0309",
+      },
+    ],
   },
 ];
 
@@ -27,12 +36,9 @@ export default function PolicyDocumentsPage() {
 
         <div className="mt-10 grid gap-6">
           {policyDocuments.map((item) => (
-            <a
+            <article
               key={item.title}
-              href={item.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-emerald-400/60 hover:shadow-xl hover:shadow-emerald-500/10"
+              className="rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg"
             >
               <div className="mb-3 flex items-start justify-between gap-4">
                 <div className="flex items-center gap-2">
@@ -51,13 +57,23 @@ export default function PolicyDocumentsPage() {
               <p className="mb-3 text-sm leading-7 text-slate-400">
                 {item.description}
               </p>
-              <div className="flex items-center justify-between">
-                <span className="text-sm text-slate-400">Read document</span>
-                <span className="text-emerald-400 transition-colors group-hover:text-emerald-300">
-                  -&gt;
-                </span>
+              <div className="flex flex-wrap gap-3">
+                {item.resources.map((resource) => (
+                  <a
+                    key={resource.href}
+                    href={resource.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group inline-flex items-center gap-2 rounded-full border border-slate-700 px-4 py-2 text-sm text-slate-300 transition-colors hover:border-emerald-400/60 hover:text-emerald-200"
+                  >
+                    {resource.label}
+                    <span className="text-emerald-400 transition-colors group-hover:text-emerald-300">
+                      -&gt;
+                    </span>
+                  </a>
+                ))}
               </div>
-            </a>
+            </article>
           ))}
         </div>
       </section>

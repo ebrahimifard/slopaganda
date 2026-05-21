@@ -11,6 +11,26 @@ type PressItem = {
 
 const pressItems: PressItem[] = [
   {
+    outlet: "KQED / NPR",
+    date: "20 May 2026",
+    title: "Iran Is Winning The Slopaganda War",
+    description:
+      "Prof. Michal Klincewicz discusses how AI-generated LEGO videos are reshaping wartime propaganda, information ecosystems, and the meme war around the U.S.-Israel-Iran conflict.",
+    href: "https://www.kqed.org/news/12084447/iran-is-winning-the-slopaganda-war",
+    action: "Read article",
+    color: "bg-teal-400",
+  },
+  {
+    outlet: "The Christian Science Monitor",
+    date: "20 May 2026",
+    title: "With viral 'Lego' videos, Iran stakes claim as a propaganda power player",
+    description:
+      "Feature on Iran's viral AI-driven propaganda campaign and its reach with Western audiences, featuring Dr. Michal Klincewicz.",
+    href: "https://www.csmonitor.com/World/Middle-East/2026/0520/iran-ai-slopaganda-propaganda-social-media-trump",
+    action: "Read article",
+    color: "bg-cyan-400",
+  },
+  {
     outlet: "Medieinstitutet Fojo",
     date: "12 May 2026",
     title: "Myras meme-skola 3: Slopagandan och leksakskriget",
