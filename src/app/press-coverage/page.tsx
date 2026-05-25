@@ -11,6 +11,16 @@ type PressItem = {
 
 const pressItems: PressItem[] = [
   {
+    outlet: "Salon",
+    date: "24 May 2026",
+    title: "AI is breaking our political reality",
+    description:
+      "AI-generated ads and deepfakes are being deployed in congressional races and confusing voters.",
+    href: "https://www.salon.com/2026/05/24/ai-is-breaking-our-political-reality/",
+    action: "Read article",
+    color: "bg-rose-400",
+  },
+  {
     outlet: "KQED / NPR",
     date: "20 May 2026",
     title: "Iran Is Winning The Slopaganda War",
@@ -161,6 +171,17 @@ const pressItems: PressItem[] = [
     href: "https://www.abc.net.au/listen/programs/lifematters/watch-out-for-slopaganda-in-your-feeds/106551364",
     action: "Listen now",
     color: "bg-indigo-400",
+  },
+  {
+    outlet: "The Guardian",
+    date: "8 April 2026",
+    title:
+      "AI-generated Lego videos and Trump's poo-bombing: welcome to the Iran-US slopaganda wars",
+    description:
+      "Commentary on how uncertainty around trustworthy sources can push audiences toward whatever feels comforting, invigorating, or infuriating.",
+    href: "https://www.theguardian.com/commentisfree/2026/apr/08/lego-videos-iran-trump-ai-video-meme-propaganda-movie-animation",
+    action: "Read article",
+    color: "bg-red-400",
   },
   {
     outlet: "The Breakfast Couch",
