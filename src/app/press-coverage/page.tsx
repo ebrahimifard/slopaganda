@@ -11,6 +11,16 @@ type PressItem = {
 
 const pressItems: PressItem[] = [
   {
+    outlet: "Ey! Daily",
+    date: "27 May 2026",
+    title: "Explainer: Slopaganda",
+    description:
+      "AI-propaganda verschijnt steeds vaker op social media. Onderzoekers hebben er zelfs een naam voor: slopaganda. In deze explainer kom je erachter hoe slopaganda werkt, waarom het gevaarlijk kan zijn en wat jij kunt doen om de verspreiding ervan tegen te gaan.",
+    href: "https://eydaily.nl/tech/explainer-slopaganda/",
+    action: "Read article",
+    color: "bg-blue-400",
+  },
+  {
     outlet: "Salon",
     date: "24 May 2026",
     title: "AI is breaking our political reality",
@@ -19,6 +29,16 @@ const pressItems: PressItem[] = [
     href: "https://www.salon.com/2026/05/24/ai-is-breaking-our-political-reality/",
     action: "Read article",
     color: "bg-rose-400",
+  },
+  {
+    outlet: "Media Diversity Institute (MDI)",
+    date: "21 May 2026",
+    title: "Slopaganda Turns Stereotypes into Content",
+    description:
+      "A new political weapon is spreading through social media feeds, often disguised as entertainment. Sometimes it looks like a Lego animation, a rap video, a fake influencer, a battlefield clip, or a meme. It is cheap to make, fast to publish, and easy to tailor to different audiences. Researchers call it slopaganda: AI-generated propaganda content designed to manipulate political beliefs, emotions, and attention.",
+    href: "https://www.media-diversity.org/slopaganda-turns-stereotypes-into-content/",
+    action: "Read article",
+    color: "bg-orange-400",
   },
   {
     outlet: "KQED / NPR",
