@@ -224,6 +224,17 @@ const pressItems: PressItem[] = [
     color: "bg-blue-400",
   },
   {
+    outlet: "Sydsvenskan",
+    date: "15 March 2026",
+    title:
+      "Förintelsen som AI-slop: ”Jag kan inte nog understryka hur illa det kommer att bli”",
+    description:
+      "Nakenbilder, foton på utmärglade Förintelseöverlevare, ja till och med hela nyhetsstationer. Allt är fejk – men når miljoner människor i sociala medier. Är hela världen på väg att bli som Ryssland, där folk har slutat bry sig om sanningen?",
+    href: "https://www.sydsvenskan.se/kultur/forintelsen-som-ai-slop-jag-kan-inte-nog-understryka-hur-illa-det-kommer-att-bli/",
+    action: "Read article",
+    color: "bg-sky-400",
+  },
+  {
     outlet: "Saufex Podcast",
     date: "19 February 2026",
     title: "Dr. Michal Klincewicz on slopaganda",
