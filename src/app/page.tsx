@@ -23,6 +23,19 @@ export default function Home() {
                 and overwhelm the information ecosystem.
               </p>
             </div>
+            <a
+              href="https://en.wikipedia.org/wiki/Slopaganda"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group mt-5 inline-block rounded-xl border border-slate-700 bg-slate-950/60 px-4 py-3 transition-colors hover:border-emerald-400/60 hover:bg-slate-900"
+            >
+              <div className="flex items-center gap-3">
+                <p className="text-sm leading-6 text-slate-300">
+                  Read more on Wikipedia: terminology, examples, and related
+                  concepts.
+                </p>
+              </div>
+            </a>
           </div>
         </section>
 
