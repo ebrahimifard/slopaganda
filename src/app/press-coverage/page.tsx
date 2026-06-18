@@ -11,16 +11,6 @@ type PressItem = {
 
 const pressItems: PressItem[] = [
   {
-    outlet: "Cyber for Good",
-    date: "June 2026",
-    title: "Michal Klincewicz : « Il faut remettre Internet au rythme de l’humain »",
-    description:
-      "Interview with Michal Klincewicz on AI ethics, neuroscience, decision-making, and the sociopolitical effects of generative AI in public life, including how slopaganda uses AI-generated content to influence group decision-making.",
-    href: "https://cyberforgood.org/fr/michal-klincewicz-internet-ia-rythme-humain/",
-    action: "Read interview",
-    color: "bg-fuchsia-400",
-  },
-  {
     outlet: "Centro Nexa su Internet & Società",
     date: "10 June 2026",
     title:
@@ -31,6 +21,16 @@ const pressItems: PressItem[] = [
     embed: "https://www.youtube.com/embed/eM1GYUNs2aQ",
     action: "View talk page",
     color: "bg-indigo-400",
+  },
+  {
+    outlet: "Cyber for Good",
+    date: "June 2026",
+    title: "Michal Klincewicz : « Il faut remettre Internet au rythme de l’humain »",
+    description:
+      "Interview with Michal Klincewicz on AI ethics, neuroscience, decision-making, and the sociopolitical effects of generative AI in public life, including how slopaganda uses AI-generated content to influence group decision-making.",
+    href: "https://cyberforgood.org/fr/michal-klincewicz-internet-ia-rythme-humain/",
+    action: "Read interview",
+    color: "bg-fuchsia-400",
   },
   {
     outlet: "Ey! Daily",
