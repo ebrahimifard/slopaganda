@@ -1,4 +1,4 @@
-const policyDocuments = [
+const policyCoverage = [
   {
     source: "Hansard",
     date: "Commonwealth of Australia 2026",
@@ -18,16 +18,16 @@ const policyDocuments = [
   },
 ];
 
-export default function PolicyDocumentsPage() {
+export default function PolicyCoveragePage() {
   return (
-    <main className="min-h-screen bg-slate-950 px-6 py-12 text-slate-100 sm:px-10">
-      <section className="mx-auto max-w-5xl rounded-3xl border border-slate-800 bg-slate-900/95 p-10 shadow-xl shadow-slate-950/20">
+    <main className="mx-auto min-h-screen w-full max-w-7xl px-6 py-12 text-slate-100 sm:px-10">
+      <section className="rounded-3xl border border-slate-800 bg-slate-900/95 p-10 shadow-xl shadow-slate-950/20">
         <div className="space-y-4">
           <p className="text-sm uppercase tracking-[0.3em] text-emerald-300/90">
             Policy and official reports
           </p>
           <h1 className="text-3xl font-semibold text-white sm:text-4xl">
-            Slopaganda in Policy Documents
+            Slopaganda in Policy Coverage
           </h1>
           <p className="max-w-3xl leading-8 text-slate-300">
             References to slopaganda in government and institutional reports.
@@ -35,7 +35,7 @@ export default function PolicyDocumentsPage() {
         </div>
 
         <div className="mt-10 grid gap-6">
-          {policyDocuments.map((item) => (
+          {policyCoverage.map((item) => (
             <article
               key={item.title}
               className="rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg"

@@ -11,6 +11,28 @@ type PressItem = {
 
 const pressItems: PressItem[] = [
   {
+    outlet: "Cyber for Good",
+    date: "June 2026",
+    title: "Michal Klincewicz : « Il faut remettre Internet au rythme de l’humain »",
+    description:
+      "Interview with Michal Klincewicz on AI ethics, neuroscience, decision-making, and the sociopolitical effects of generative AI in public life, including how slopaganda uses AI-generated content to influence group decision-making.",
+    href: "https://cyberforgood.org/fr/michal-klincewicz-internet-ia-rythme-humain/",
+    action: "Read interview",
+    color: "bg-fuchsia-400",
+  },
+  {
+    outlet: "Centro Nexa su Internet & Società",
+    date: "10 June 2026",
+    title:
+      "195° Mercoledì di Nexa – Slopaganda: The interaction between propaganda and generative AI",
+    description:
+      "Prof. Mark Alfano discusses slopaganda as a strategy for shaping the informational environments groups rely on to make decisions. The talk connects propaganda, misinformation, and generative AI slop to emerging epistemic challenges, then outlines possible interventions.",
+    href: "https://nexa.polito.it/mercoledi-195/",
+    embed: "https://www.youtube.com/embed/eM1GYUNs2aQ",
+    action: "View talk page",
+    color: "bg-indigo-400",
+  },
+  {
     outlet: "Ey! Daily",
     date: "27 May 2026",
     title: "Explainer: Slopaganda",
@@ -347,10 +369,26 @@ function PressCard({ item }: { item: PressItem }) {
         </div>
       )}
       <div className="mt-4 flex items-center justify-between">
-        <span className="text-sm text-slate-400">{item.action}</span>
-        <span className="text-emerald-400 transition-colors group-hover:text-emerald-300">
-          -&gt;
-        </span>
+        {item.href && item.embed ? (
+          <a
+            href={item.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm text-slate-400 transition-colors hover:text-emerald-200"
+          >
+            {item.action}
+            <span className="text-emerald-400 transition-colors group-hover:text-emerald-300">
+              -&gt;
+            </span>
+          </a>
+        ) : (
+          <>
+            <span className="text-sm text-slate-400">{item.action}</span>
+            <span className="text-emerald-400 transition-colors group-hover:text-emerald-300">
+              -&gt;
+            </span>
+          </>
+        )}
       </div>
     </>
   );
@@ -358,7 +396,7 @@ function PressCard({ item }: { item: PressItem }) {
   const className =
     "group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-emerald-400/60 hover:shadow-xl hover:shadow-emerald-500/10";
 
-  if (item.href) {
+  if (item.href && !item.embed) {
     return (
       <a
         href={item.href}
@@ -376,8 +414,8 @@ function PressCard({ item }: { item: PressItem }) {
 
 export default function PressCoveragePage() {
   return (
-    <main className="min-h-screen bg-slate-950 px-6 py-12 text-slate-100 sm:px-10">
-      <section className="mx-auto max-w-5xl rounded-3xl border border-slate-800 bg-slate-900/95 p-10 shadow-xl shadow-slate-950/20">
+    <main className="mx-auto min-h-screen w-full max-w-7xl px-6 py-12 text-slate-100 sm:px-10">
+      <section className="rounded-3xl border border-slate-800 bg-slate-900/95 p-10 shadow-xl shadow-slate-950/20">
         <div className="space-y-4">
           <p className="text-sm uppercase tracking-[0.3em] text-emerald-300/90">
             Press coverage

@@ -1,15 +1,18 @@
-export default function WhatOthersSay() {
+export default function SlopagandaArticles() {
   return (
-    <section className="rounded-3xl border border-slate-800 bg-slate-900/95 p-10 shadow-xl shadow-slate-950/20 mt-12 max-w-5xl mx-auto">
+    <main className="mx-auto min-h-screen w-full max-w-7xl px-6 py-12 text-slate-100 sm:px-10">
+      <section className="rounded-3xl border border-slate-800 bg-slate-900/95 p-10 shadow-xl shadow-slate-950/20">
       <div className="space-y-4">
         <p className="text-sm uppercase tracking-[0.3em] text-emerald-300/90">
-          Press coverage
+          External articles
         </p>
         <h2 className="text-3xl font-semibold text-white sm:text-4xl">
-          What Others Say About Slopaganda
+          Slopaganda Articles
         </h2>
         <p className="max-w-3xl text-slate-300 leading-8">
-          This page collects notable mentions of &quot;slopaganda&quot; in the media and public discourse, where the concept is discussed or referenced without directly interviewing the authors or featuring their research paper.
+          This page collects notable articles and public mentions where the
+          concept of &quot;slopaganda&quot; is discussed or referenced beyond direct
+          coverage of the authors and their research paper.
         </p>
       </div>
       <div className="mt-10 space-y-8">
@@ -97,6 +100,7 @@ export default function WhatOthersSay() {
           </div>
         </a>
       </div>
-    </section>
+      </section>
+    </main>
   );
 }

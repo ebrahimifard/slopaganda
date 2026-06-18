@@ -30,7 +30,7 @@ export default function Home() {
           <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div className="space-y-3">
               <p className="text-sm uppercase tracking-[0.3em] text-emerald-300/90">
-                Original research
+                Main Paper
               </p>
               <h2 className="text-3xl font-semibold text-white sm:text-4xl">
                 Slopaganda: The interaction between propaganda and generative AI

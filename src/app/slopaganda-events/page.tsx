@@ -1,6 +1,7 @@
 export default function SlopagandaEvents() {
   return (
-    <section className="mx-auto mt-12 max-w-5xl rounded-3xl border border-slate-800 bg-slate-900/95 p-10 shadow-xl shadow-slate-950/20">
+    <main className="mx-auto min-h-screen w-full max-w-7xl px-6 py-12 text-slate-100 sm:px-10">
+      <section className="rounded-3xl border border-slate-800 bg-slate-900/95 p-10 shadow-xl shadow-slate-950/20">
       <div className="space-y-4">
         <p className="text-sm uppercase tracking-[0.3em] text-emerald-300/90">
           Events
@@ -51,6 +52,7 @@ export default function SlopagandaEvents() {
           </div>
         </a>
       </div>
-    </section>
+      </section>
+    </main>
   );
 }
