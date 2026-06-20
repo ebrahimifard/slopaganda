@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 
 const menuItems = [
   { href: "/#introduction", label: "What is Slopaganda" },
@@ -15,6 +18,26 @@ const resourceItems = [
 ];
 
 export default function SiteHeader() {
+  const [resourcesOpen, setResourcesOpen] = useState(false);
+  const resourcesRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handlePointerDown(event: PointerEvent) {
+      if (
+        resourcesRef.current &&
+        !resourcesRef.current.contains(event.target as Node)
+      ) {
+        setResourcesOpen(false);
+      }
+    }
+
+    document.addEventListener("pointerdown", handlePointerDown);
+
+    return () => {
+      document.removeEventListener("pointerdown", handlePointerDown);
+    };
+  }, []);
+
   return (
     <header className="mx-auto flex w-full max-w-7xl flex-col gap-8 px-6 py-8 sm:px-10">
       <div className="flex flex-col gap-6">
@@ -36,23 +59,60 @@ export default function SiteHeader() {
               {item.label}
             </Link>
           ))}
-          <div className="group relative">
+          <div
+            ref={resourcesRef}
+            className="relative"
+            onPointerEnter={(event) => {
+              if (event.pointerType === "mouse") {
+                setResourcesOpen(true);
+              }
+            }}
+            onPointerLeave={(event) => {
+              if (event.pointerType === "mouse") {
+                setResourcesOpen(false);
+              }
+            }}
+          >
             <button
               type="button"
               aria-haspopup="true"
+              aria-expanded={resourcesOpen}
+              onPointerDown={(event) => {
+                if (event.pointerType !== "mouse") {
+                  event.preventDefault();
+                  setResourcesOpen((open) => !open);
+                }
+              }}
+              onKeyDown={(event) => {
+                if (event.key === "Enter" || event.key === " ") {
+                  event.preventDefault();
+                  setResourcesOpen((open) => !open);
+                }
+              }}
               className="flex cursor-pointer items-center gap-2 rounded-full px-4 py-2 transition hover:bg-slate-800 hover:text-white"
             >
               External Resources
-              <span className="text-xs text-emerald-300 transition-transform group-hover:rotate-180">
+              <span
+                className={`text-xs text-emerald-300 transition-transform ${
+                  resourcesOpen ? "rotate-180" : ""
+                }`}
+              >
                 v
               </span>
             </button>
-            <div className="invisible pointer-events-none absolute right-0 top-full z-20 min-w-56 translate-y-1 pt-2 opacity-0 transition duration-150 group-hover:visible group-hover:pointer-events-auto group-hover:translate-y-0 group-hover:opacity-100">
+            <div
+              className={`absolute right-0 top-full z-20 min-w-56 pt-2 transition duration-150 ${
+                resourcesOpen
+                  ? "visible pointer-events-auto translate-y-0 opacity-100"
+                  : "invisible pointer-events-none translate-y-1 opacity-0"
+              }`}
+            >
               <div className="overflow-hidden rounded-2xl border border-slate-700 bg-slate-900 p-2 shadow-xl shadow-slate-950/40">
                 {resourceItems.map((item) => (
                   <Link
                     key={item.href}
                     href={item.href}
+                    onClick={() => setResourcesOpen(false)}
                     className="block rounded-xl px-4 py-2 text-sm text-slate-300 transition hover:bg-slate-800 hover:text-white"
                   >
                     {item.label}
