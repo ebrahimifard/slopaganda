@@ -1,12 +1,19 @@
 const projects = [
   {
     name: "Slopaganda.dk",
-    type: "Website",
+    type: "Monitoring 2026 Danish parliamentary election",
     description:
       "Slopaganda.dk documents Danish politicians who used AI-generated slop during the campaign leading up to the 2026 Danish parliamentary election. The project presents these examples as evidence of poor judgment, disregard for truth and facts, and indifference to environmental and climate costs, giving voters a factual basis for making their own decisions at the ballot box.",
     note:
       "After the election, public tip submissions closed. The site credits four weeks of public tips for making the archive possible.",
     href: "https://slopaganda.dk/",
+  },
+  {
+    name: "CampAIgn Tracker",
+    type: "Monitoring 2025 Dutch parliamentary election",
+    description:
+      "CampAIgn Tracker analyzes AI-generated campaign content from parties, candidates, selected influencers, and commentators during the 2025 Dutch parliamentary election. The monitor tracks posts across Facebook, Instagram, TikTok, and X, showing which parties spread AI-generated messages, whether AI labels are used, who is depicted, which topics are discussed, and whether the tone is positive or negative.",
+    href: "https://www.campaigntracker.nl/",
   },
 ];
 
@@ -50,9 +57,11 @@ export default function SlopagandaProjectsPage() {
               <p className="mb-3 text-sm leading-7 text-slate-400">
                 {project.description}
               </p>
-              <p className="mb-4 text-sm leading-7 text-slate-500">
-                {project.note}
-              </p>
+              {project.note && (
+                <p className="mb-4 text-sm leading-7 text-slate-500">
+                  {project.note}
+                </p>
+              )}
               <div className="flex items-center justify-between">
                 <span className="text-sm text-slate-400">Visit project</span>
                 <span className="text-emerald-400 transition-colors group-hover:text-emerald-300">
