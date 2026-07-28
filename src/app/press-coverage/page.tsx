@@ -11,6 +11,27 @@ type PressItem = {
 
 const pressItems: PressItem[] = [
   {
+    outlet: "Press magazine",
+    date: "July-August 2026",
+    title: "Slopaganda",
+    description:
+      "Donald Trump w mediach społecznościowych prezentował się już jako król, rycerz Jedi, papież czy Jezus. Ale Amerykanie oglądają też filmiki, w których prezydent USA jest klockiem Lego strącanym do piekła. To tania, bełkotliwa propaganda nowej ery, która zalewa już także Polskę.",
+    href: "https://www.press.pl/magazyn-press/artykul/93766,slopaganda",
+    action: "Read article",
+    color: "bg-red-400",
+  },
+  {
+    outlet: "The Guardian",
+    date: "15 July 2026",
+    title:
+      "From racist Bugs Bunny to the bear MPs want to ban: how cartoons have indoctrinated kids for over 100 years",
+    description:
+      "Politicians are claiming that a hit Netflix animation is Russian propaganda aimed at the militarisation of children. The article places that debate in a longer history of cartoons used to shape children's political imaginations, including state-backed and intelligence-funded entertainment.",
+    href: "https://www.theguardian.com/tv-and-radio/2026/jul/15/masha-bear-russian-propaganda-netflix-mp-calls-to-ban-controversial-cartoons",
+    action: "Read article",
+    color: "bg-green-400",
+  },
+  {
     outlet: "Centro Nexa su Internet & Società",
     date: "10 June 2026",
     title:
@@ -121,6 +142,16 @@ const pressItems: PressItem[] = [
     href: "https://www.ardmediathek.de/video/ttt-titel-thesen-temperamente/ki-propaganda-mit-lego-mannchen/ard/Y2E2NTIwNGEtNWE3Yi00YmNmLTgyNmYtODk1ZTBiMDFhZTZj",
     action: "Watch now",
     color: "bg-yellow-400",
+  },
+  {
+    outlet: "Mission Media",
+    date: "1 May 2026",
+    title: "Why Brands Built for Trust Become Targets for Slopaganda",
+    description:
+      "LEGO's visual identity was appropriated in Iranian propaganda videos, showing how trusted brands can become tools for external actors. The article frames this as a new communications crisis for brand leaders: brand appropriation through AI-generated propaganda.",
+    href: "https://missionmedia.asia/brand-protection-slopaganda-crisis-guide/",
+    action: "Read article",
+    color: "bg-purple-400",
   },
   {
     outlet: "TVN24+",

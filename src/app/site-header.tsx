@@ -31,10 +31,18 @@ export default function SiteHeader() {
       }
     }
 
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        setResourcesOpen(false);
+      }
+    }
+
     document.addEventListener("pointerdown", handlePointerDown);
+    document.addEventListener("keydown", handleKeyDown);
 
     return () => {
       document.removeEventListener("pointerdown", handlePointerDown);
+      document.removeEventListener("keydown", handleKeyDown);
     };
   }, []);
 
@@ -61,28 +69,13 @@ export default function SiteHeader() {
           ))}
           <div
             ref={resourcesRef}
-            className="relative"
-            onPointerEnter={(event) => {
-              if (event.pointerType === "mouse") {
-                setResourcesOpen(true);
-              }
-            }}
-            onPointerLeave={(event) => {
-              if (event.pointerType === "mouse") {
-                setResourcesOpen(false);
-              }
-            }}
+            className="group relative"
           >
             <button
               type="button"
               aria-haspopup="true"
               aria-expanded={resourcesOpen}
-              onPointerDown={(event) => {
-                if (event.pointerType !== "mouse") {
-                  event.preventDefault();
-                  setResourcesOpen((open) => !open);
-                }
-              }}
+              onClick={() => setResourcesOpen((open) => !open)}
               onKeyDown={(event) => {
                 if (event.key === "Enter" || event.key === " ") {
                   event.preventDefault();
@@ -94,14 +87,14 @@ export default function SiteHeader() {
               External Resources
               <span
                 className={`text-xs text-emerald-300 transition-transform ${
-                  resourcesOpen ? "rotate-180" : ""
+                  resourcesOpen ? "rotate-180" : "group-hover:rotate-180"
                 }`}
               >
                 v
               </span>
             </button>
             <div
-              className={`absolute right-0 top-full z-20 min-w-56 pt-2 transition duration-150 ${
+              className={`absolute right-0 top-full z-20 min-w-56 pt-2 transition duration-150 group-hover:visible group-hover:pointer-events-auto group-hover:translate-y-0 group-hover:opacity-100 ${
                 resourcesOpen
                   ? "visible pointer-events-auto translate-y-0 opacity-100"
                   : "invisible pointer-events-none translate-y-1 opacity-0"
