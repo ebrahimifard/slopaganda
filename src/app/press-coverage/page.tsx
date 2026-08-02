@@ -21,6 +21,17 @@ const pressItems: PressItem[] = [
     color: "bg-red-400",
   },
   {
+    outlet: "DEMAGOG",
+    date: "30 July 2026",
+    title:
+      "Slopaganda w Polsce. AI ożywia Leppera, podtapia polityków i prawdę",
+    description:
+      "Tuskotopia, tonący okręt PiS czy Donald Trump za sterami myśliwca obrzucający protestujących odchodami. Żadna z tych sytuacji nie wydarzyła się naprawdę. Nie są to jednak przykłady dezinformacji. Rozwój generatywnej AI sprzyja powstawaniu nowych metod manipulacji odbiorcą. Takim zjawiskiem jest slopaganda.",
+    href: "https://demagog.org.pl/analizy_i_raporty/slopaganda-w-polsce-ai-ozywia-leppera-podtapia-politykow-i-prawde/",
+    action: "Read article",
+    color: "bg-cyan-400",
+  },
+  {
     outlet: "The Guardian",
     date: "15 July 2026",
     title:

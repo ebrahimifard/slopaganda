@@ -1,5 +1,24 @@
 const articles = [
   {
+    outlet: "DEMAGOG + Cyber for Good",
+    description:
+      "Slopaganda in practice: Polish cases and human-scale internet governance",
+    summary:
+      "A paired deep dive connecting DEMAGOG's analysis of AI-generated political manipulation in Poland with Cyber for Good's interview with Michal Klincewicz on slowing digital information systems back down to a human scale.",
+    link: "https://demagog.org.pl/analizy_i_raporty/slopaganda-w-polsce-ai-ozywia-leppera-podtapia-politykow-i-prawde/",
+    date: "30 July 2026",
+    resources: [
+      {
+        label: "DEMAGOG",
+        href: "https://demagog.org.pl/analizy_i_raporty/slopaganda-w-polsce-ai-ozywia-leppera-podtapia-politykow-i-prawde/",
+      },
+      {
+        label: "Cyber for Good",
+        href: "https://cyberforgood.org/fr/michal-klincewicz-internet-ia-rythme-humain/",
+      },
+    ],
+  },
+  {
     outlet: "The Conversation",
     description:
       "Slopaganda wars: How and why the US and Iran are flooding the zone with viral AI-generated noise",
@@ -48,33 +67,75 @@ export default function DeepDivesPage() {
         <div className="mt-10 grid gap-4">
           {articles.map((item) => (
             <div key={item.outlet}>
-              <a
-                href={item.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-emerald-400/60 hover:shadow-xl hover:shadow-emerald-500/10"
-              >
-                <div className="mb-3 flex items-start justify-between gap-4">
-                  <div className="flex items-center gap-2">
-                    <div className="h-3 w-3 rounded-full bg-orange-400" />
-                    <p className="text-xs font-medium uppercase tracking-wider text-slate-400">
-                      {item.outlet}
-                    </p>
+              {item.resources ? (
+                <article className="rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg">
+                  <div className="mb-3 flex items-start justify-between gap-4">
+                    <div className="flex items-center gap-2">
+                      <div className="h-3 w-3 rounded-full bg-orange-400" />
+                      <p className="text-xs font-medium uppercase tracking-wider text-slate-400">
+                        {item.outlet}
+                      </p>
+                    </div>
+                    <span className="text-right text-xs text-slate-500">
+                      {item.date}
+                    </span>
                   </div>
-                  <span className="text-right text-xs text-slate-500">
-                    {item.date}
-                  </span>
-                </div>
-                <h3 className="mb-2 text-lg font-semibold leading-tight text-white transition-colors group-hover:text-emerald-200">
-                  {item.description}
-                </h3>
-                <div className="flex items-center justify-between">
-                  <span className="text-sm text-slate-400">Read article</span>
-                  <span className="text-emerald-400 transition-colors group-hover:text-emerald-300">
-                    -&gt;
-                  </span>
-                </div>
-              </a>
+                  <h3 className="mb-2 text-lg font-semibold leading-tight text-white">
+                    {item.description}
+                  </h3>
+                  {item.summary && (
+                    <p className="mb-4 text-sm leading-7 text-slate-400">
+                      {item.summary}
+                    </p>
+                  )}
+                  <div className="flex flex-wrap gap-3">
+                    {item.resources.map((resource) => (
+                      <a
+                        key={resource.href}
+                        href={resource.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group inline-flex items-center gap-2 rounded-full border border-slate-700 px-4 py-2 text-sm text-slate-300 transition-colors hover:border-emerald-400/60 hover:text-emerald-200"
+                      >
+                        {resource.label}
+                        <span className="text-emerald-400 transition-colors group-hover:text-emerald-300">
+                          -&gt;
+                        </span>
+                      </a>
+                    ))}
+                  </div>
+                </article>
+              ) : (
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-emerald-400/60 hover:shadow-xl hover:shadow-emerald-500/10"
+                >
+                  <div className="mb-3 flex items-start justify-between gap-4">
+                    <div className="flex items-center gap-2">
+                      <div className="h-3 w-3 rounded-full bg-orange-400" />
+                      <p className="text-xs font-medium uppercase tracking-wider text-slate-400">
+                        {item.outlet}
+                      </p>
+                    </div>
+                    <span className="text-right text-xs text-slate-500">
+                      {item.date}
+                    </span>
+                  </div>
+                  <h3 className="mb-2 text-lg font-semibold leading-tight text-white transition-colors group-hover:text-emerald-200">
+                    {item.description}
+                  </h3>
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm text-slate-400">
+                      Read article
+                    </span>
+                    <span className="text-emerald-400 transition-colors group-hover:text-emerald-300">
+                      -&gt;
+                    </span>
+                  </div>
+                </a>
+              )}
               {item.alsoFeaturedIn && (
                 <div className="mt-2 text-xs text-slate-500">
                   Also featured in:{" "}
