@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 
 const menuItems = [
   { href: "/#introduction", label: "What is Slopaganda" },
+  { href: "/news", label: "News" },
   { href: "/press-coverage", label: "Press Coverage" },
   { href: "/deep-dives", label: "Deep Dives" },
   { href: "/policy-coverage", label: "Policy Coverage" },
