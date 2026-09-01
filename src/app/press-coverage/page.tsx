@@ -11,6 +11,18 @@ type PressItem = {
 
 const pressItems: PressItem[] = [
   {
+    outlet: "TVP Info",
+    date: "14 August 2026",
+    title:
+      "Propaganda z wykorzystaniem sztucznej inteligencji | WYKRYWACZ KŁAMSTW",
+    description:
+      "TVP Info's Wykrywacz Kłamstw covers propaganda created with artificial intelligence, including an interview segment with Dr. Michal Klincewicz on slopaganda and AI-generated political communication.",
+    href: "https://www.youtube.com/watch?v=FF1BIk52U0M",
+    embed: "https://www.youtube.com/embed/FF1BIk52U0M",
+    action: "Watch on YouTube",
+    color: "bg-red-500",
+  },
+  {
     outlet: "Press magazine",
     date: "July-August 2026",
     title: "Slopaganda",
