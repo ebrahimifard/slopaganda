@@ -1,5 +1,13 @@
 const newsItems = [
   {
+    source: "Wikipedia",
+    date: "10 November 2026",
+    title: "Slopaganda mentioned on the Explosive Media page",
+    description:
+      'The Explosive Media article describes how philosophers Mark Alfano and Michał Klincewicz coined “slopaganda” in 2025 for AI-generated propaganda, and identifies Explosive Media’s videos as a further example.',
+    href: "https://en.wikipedia.org/wiki/Explosive_Media",
+  },
+  {
     source: "Merriam-Webster",
     date: "11 June 2026",
     title: "Merriam-Webster Adds Slopaganda to Its Slang Dictionary",

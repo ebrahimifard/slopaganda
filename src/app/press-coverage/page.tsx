@@ -11,6 +11,28 @@ type PressItem = {
 
 const pressItems: PressItem[] = [
   {
+    outlet: "CNBC",
+    date: "4 November 2026",
+    title:
+      "AI-generated ‘slopaganda’ in political ads puts internet platforms on alert",
+    description:
+      "CNBC reports on the record spending on AI-generated political ads ahead of the midterm elections and the challenges they pose for internet platforms, amid a lack of federal legislation requiring disclosure of AI use in political advertising.",
+    href: "https://www.cnbc.com/2026/11/03/ai-generated-slopaganda-in-political-ads-puts-platforms-on-alert.html",
+    action: "Read article",
+    color: "bg-blue-500",
+  },
+  {
+    outlet: "MS NOW",
+    date: "30 October 2026",
+    title: "SLOPAGANDA! How to combat MAGA’s AI manipulation POISONING politics",
+    description:
+      "MS NOW examines the spread of slopaganda in the midterm elections and asks whether it can be stopped. The investigation explores the rise of AI-generated propaganda, President Trump’s embrace of it, shadowy operatives accused of using it to sway a Florida election, and an experiment showing why AI needs guardrails to protect voters and democracy.",
+    href: "https://www.youtube.com/watch?v=mSrEtb5uIvc",
+    embed: "https://www.youtube.com/embed/mSrEtb5uIvc",
+    action: "Watch on YouTube",
+    color: "bg-indigo-500",
+  },
+  {
     outlet: "TVP Info",
     date: "14 August 2026",
     title:
