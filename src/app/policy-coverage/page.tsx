@@ -1,5 +1,18 @@
 const policyCoverage = [
   {
+    source: "Helm Digital Democracy / Cyfrowy Ster",
+    date: "November 2026",
+    title: "Slopaganda: trendy i wyzwania",
+    description:
+      "Rozdział raportu „Na horyzoncie: Wybory parlamentarne 2027”, opublikowanego przez Helm Digital Democracy. Tekst Dr. Michała Klincewicza omawia trendy i wyzwania związane ze slopagandą.",
+    resources: [
+      {
+        label: "Raport (PDF)",
+        href: "https://cyfrowy-ster.org/wp-content/uploads/2026/10/helm-na-horyzoncie-2027.pdf",
+      },
+    ],
+  },
+  {
     source: "Hansard",
     date: "Commonwealth of Australia 2026",
     title: "The Integrity Gap: Restoring Trust in the Climate and Energy Debate",
