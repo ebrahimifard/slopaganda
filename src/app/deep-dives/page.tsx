@@ -1,4 +1,14 @@
-const articles = [
+type DeepDiveArticle = {
+  outlet: string;
+  description: string;
+  summary?: string;
+  link: string;
+  date: string;
+  resources?: { label: string; href: string }[];
+  alsoFeaturedIn?: { name: string; link: string }[];
+};
+
+const articles: DeepDiveArticle[] = [
   {
     outlet: "DEMAGOG + Cyber for Good",
     description:
@@ -154,9 +164,9 @@ export default function DeepDivesPage() {
                       >
                         {feature.name}
                       </a>
-                      {index < item.alsoFeaturedIn.length - 2
+                      {index < (item.alsoFeaturedIn?.length ?? 0) - 2
                         ? ", "
-                        : index === item.alsoFeaturedIn.length - 2
+                        : index === (item.alsoFeaturedIn?.length ?? 0) - 2
                           ? ", and "
                           : "."}
                     </span>
