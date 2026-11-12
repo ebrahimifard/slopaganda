@@ -509,7 +509,7 @@ export default function PressCoveragePage() {
           <h1 className="text-3xl font-semibold text-white sm:text-4xl">
             Recognition from media
           </h1>
-          <p className="max-w-3xl leading-8 text-slate-300">
+          <p className="w-full leading-8 text-slate-300">
             The concept of slopaganda is already resonating with journalists,
             researchers, and policy makers covering the intersection of AI and
             information ecosystems. This page collects articles, interviews, and
