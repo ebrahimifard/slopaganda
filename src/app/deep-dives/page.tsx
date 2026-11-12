@@ -1,5 +1,13 @@
 const articles = [
   {
+    outlet: "Helm Digital Democracy / Cyfrowy Ster",
+    description: "Slopaganda: trendy i wyzwania",
+    summary:
+      "Rozdział raportu „Na horyzoncie: Wybory parlamentarne 2027”, opublikowanego przez Helm Digital Democracy. Tekst Dr. Michała Klincewicza omawia trendy i wyzwania związane ze slopagandą.",
+    link: "https://cyfrowy-ster.org/wp-content/uploads/2026/10/helm-na-horyzoncie-2027.pdf",
+    date: "November 2026",
+  },
+  {
     outlet: "DEMAGOG + Cyber for Good",
     description:
       "Slopaganda in practice: Polish cases and human-scale internet governance",
@@ -126,6 +134,11 @@ export default function DeepDivesPage() {
                   <h3 className="mb-2 text-lg font-semibold leading-tight text-white transition-colors group-hover:text-emerald-200">
                     {item.description}
                   </h3>
+                  {item.summary && (
+                    <p className="mb-4 text-sm leading-7 text-slate-400">
+                      {item.summary}
+                    </p>
+                  )}
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-slate-400">
                       Read article

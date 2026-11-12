@@ -11,6 +11,16 @@ type PressItem = {
 
 const pressItems: PressItem[] = [
   {
+    outlet: "HUMAN.nl",
+    date: "7 November 2026",
+    title: "‘Het is propaganda op turbostand’",
+    description:
+      "Misschien heb je de AI-video’s rond de Amerikaanse verkiezingscampagne voorbij zien komen. Dit heet ‘slopaganda’: generatieve AI-content die bedoeld is om politieke overtuigingen of meningen te veranderen. Universitair docent Michał Klincewicz legt uit waarom het goedkoper, sneller en vaak effectiever is dan traditionele propaganda, en hoe herhaalde blootstelling aan dezelfde boodschap die geloofwaardiger kan laten lijken, zelfs als je weet dat de video nep is.",
+    href: "https://www.instagram.com/p/DfZvlVwAWK-/",
+    action: "View interview on Instagram",
+    color: "bg-fuchsia-400",
+  },
+  {
     outlet: "CNBC",
     date: "4 November 2026",
     title:
