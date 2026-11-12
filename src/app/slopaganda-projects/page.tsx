@@ -28,7 +28,7 @@ export default function SlopagandaProjectsPage() {
           <h1 className="text-3xl font-semibold text-white sm:text-4xl">
             Slopaganda Projects
           </h1>
-          <p className="max-w-3xl leading-8 text-slate-300">
+          <p className="w-full leading-8 text-slate-300">
             Independent projects, archives, and public-interest resources that
             track or explain slopaganda in political and civic life.
           </p>

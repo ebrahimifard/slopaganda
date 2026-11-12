@@ -9,7 +9,7 @@ export default function SlopagandaArticles() {
         <h2 className="text-3xl font-semibold text-white sm:text-4xl">
           Slopaganda Articles
         </h2>
-        <p className="max-w-3xl text-slate-300 leading-8">
+        <p className="w-full text-slate-300 leading-8">
           This page collects notable articles and public mentions where the
           concept of &quot;slopaganda&quot; is discussed or referenced beyond direct
           coverage of the authors and their research paper.

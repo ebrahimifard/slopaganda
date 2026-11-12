@@ -9,7 +9,7 @@ export default function SlopagandaEvents() {
         <h2 className="text-3xl font-semibold text-white sm:text-4xl">
           Slopaganda Events
         </h2>
-        <p className="max-w-3xl leading-8 text-slate-300">
+        <p className="w-full leading-8 text-slate-300">
           This page collects events, talks, symposia, and public programs where
           slopaganda is discussed as part of the broader politics of
           AI-generated media, propaganda, and disinformation.
