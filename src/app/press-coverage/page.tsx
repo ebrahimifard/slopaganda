@@ -4,12 +4,38 @@ type PressItem = {
   title: string;
   description: string;
   href?: string;
+  links?: { label: string; href: string }[];
   embed?: string;
   action: string;
   color: string;
 };
 
 const pressItems: PressItem[] = [
+  {
+    outlet: "DW News",
+    date: "20 November 2026",
+    title: "From slopaganda to AI agents: The future of information warfare",
+    description:
+      "What happens when propaganda no longer needs propagandists? States and their proxies are already using AI to flood social media with political content, fake personas and coordinated narratives. The next step is AI agents capable of managing entire influence campaigns, creating a new front in geopolitical competition and information warfare. Interview with Michal Klincewicz.",
+    href: "https://www.youtube.com/shorts/9b59sIMH85k",
+    links: [
+      { label: "Watch on YouTube", href: "https://www.youtube.com/shorts/9b59sIMH85k" },
+      { label: "View on Instagram", href: "https://www.instagram.com/p/Df8fQPxHEjZ/" },
+      { label: "Watch on TikTok", href: "https://www.tiktok.com/@dwnews/video/7709896359087705377?is_from_webapp=1" },
+    ],
+    action: "View coverage",
+    color: "bg-sky-400",
+  },
+  {
+    outlet: "eKathimerini",
+    date: "16 November 2026",
+    title: "Satire or propaganda? How AI-generated videos blur the lines",
+    description:
+      "Using humor as a pretext, videos created using artificial intelligence present political content. Is the message harmless? Interview with Michal Klincewicz.",
+    href: "https://www.ekathimerini.com/in-depth/1321255/satire-or-propaganda-how-ai-generated-videos-blur-the-lines/",
+    action: "Read article",
+    color: "bg-blue-400",
+  },
   {
     outlet: "HUMAN.nl",
     date: "7 November 2026",
@@ -476,13 +502,28 @@ function PressCard({ item }: { item: PressItem }) {
           </>
         )}
       </div>
+      {item.links && (
+        <div className="mt-4 flex flex-wrap gap-3">
+          {item.links.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-slate-700 px-4 py-2 text-sm text-slate-300 transition-colors hover:border-emerald-400/60 hover:text-emerald-200"
+            >
+              {link.label}<span className="text-emerald-400">-&gt;</span>
+            </a>
+          ))}
+        </div>
+      )}
     </>
   );
 
   const className =
     "group block rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-800 p-6 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-emerald-400/60 hover:shadow-xl hover:shadow-emerald-500/10";
 
-  if (item.href && !item.embed) {
+  if (item.href && !item.embed && !item.links) {
     return (
       <a
         href={item.href}
